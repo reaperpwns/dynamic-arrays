@@ -16,13 +16,18 @@ class DynamicArray {
 
   push(val) {
 
-    // Your code here
+    this.length++
+    this.data[this.length - 1] = val
+
   }
 
 
   pop() {
 
-    // Your code here
+    let val = this.data[this.length - 1]
+    this.length--
+    return val
+
   }
 
   shift() {
